@@ -1,0 +1,78 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Choose a modern font family here */
+}
+
+/* Container Styles */
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    width: 800px;
+    height: 600px;
+    border: solid 1px;
+    margin: 50px auto;
+}
+
+/* Inside Styles */
+.inside {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    align-items: center;
+    background-color: azure;
+    width: 700px;
+    height: 500px;
+    border: solid 1px;
+}
+
+/* Content Section Styles */
+.insidel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    background-color: azure;
+    width: 300px;
+    height: 400px;
+    border: solid 1px;
+}
+
+.insider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    border-radius: 0 5% 5% 0;
+}
+
+/* Text Styles */
+.topo p, .middle p {
+    margin: 5px 0;
+    line-height: 1.5; /* Improve text readability */
+}
+
+.topo p:nth-child(1) {
+    font-size: 1.2em; /* Slightly larger font size for main text */
+    font-weight: bold;
+}
+
+.topo p:nth-child(2) {
+    color: #2196f3; /* Blue color for accent */
+}
+
+.middle p:nth-child(2) {
+    font-style: italic; /* Italicize secondary text */
+}

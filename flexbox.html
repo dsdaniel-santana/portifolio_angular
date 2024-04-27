@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+  border-radius: 50%;
+        }
+        
+        #container{
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            height: 600px;
+            border: solid blue 5px;
+            border-radius: 3%;
+            margin: 50px auto;
+            background-image: repeating-conic-gradient(azure 10%, rgb(214, 214, 171) 20%);
+
+        }
+
+        .inside{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 0 30px;
+            align-items: center;
+            background-color: rgb(173, 209, 209);
+            width: 700px;
+            height: 500px;
+             border: solid 5px blue ; 
+            background-image: repeating-conic-gradient(azure 10%, rgb(214, 214, 171) 20%);
+            border-radius: 3%;
+        }
+
+         .insidel {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0 15px 0;
+            background-color: azure; 
+            width: 300px;
+            height: 350px;
+            border : solid  blue 5px;
+            border-radius: 3%;
+        } 
+
+        .insider  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border: 5px solid blue;
+            border-radius: 50%;
+            /* border-top: 2px solid red;
+            border-right: 2px solid red;
+            border-radius: 0 5% 5% 0;
+            */ 
+        }
+
+        .insider img, .insidel img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5%;
+            
+        }
+        .topo{
+            width: 200px;
+            height: 25px;
+            /*border: solid 1px;  */
+             }
+
+        .topo p{
+            margin: 0;
+            display: inline;
+            text-align: justify;
+        }
+        .topo p:nth-child(2){
+            font-weight: bold;
+            color: blue;
+            font-style: italic;
+            text-align: justify;
+        }
+
+        .middle{
+            width: 200px;
+            height:220px;
+            text-align: justify;
+            /* border: solid 1px; */
+        }
+
+        .botton{
+            width: 200px;
+            height: 75px;
+            /* border: solid 1px; */
+            text-align: center;           
+        }
+
+        .botton img {
+            transition: transform 0.3s ease;
+        }
+
+        .botton img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div class="inside">
+
+            <div class="insidel">
+                <div  class="topo"> 
+                    <p>Eleve seu negócio digital a outro nível</p>
+                    <p>com um Front-End de qualidade!</p>
+
+                </div>
+                
+                <div  class="middle">
+                    <p>Olá! Sou <b>Daniel Santana,</b>  desenvolvedor Front-End com especialidade em Angular, HTML e Css.</p>
+                    <p> Ajudo pequenos designers a colocares em prática boas ideias. Vamos conversar?</p>
+
+                </div> 
+
+                <div  class="botton">
+                    <img src="image/linkedin.png" alt="">
+                    <img src="image/git.png" alt="">
+                </div> 
+            </div>
+            
+            
+            <div class="insider">
+                <img src="image/DSprofile.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
